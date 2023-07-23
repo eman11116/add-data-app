@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main d-flex justify-content-center">
+        <div class="home w-75 text-center py-5">
+            <div class="d-flex justify-content-center">
+            <h1 >Bookmarker</h1>
+            </div>
+            <div class="bookmark-body text-center fa-bookmark">
+                <div class="d-flex justify-content-center align-items-center h2">
+                    <i class="fa-solid fa-bookmark "></i>
+                <h2>Bookmark your favorite sites </h2>
+                <i class="fa-solid fa-bookmark  "></i>            
+                </div>
+                <a href=""></a>
+            <div class="item py-3">
+                <div class="item-con  d-flex justify-content-start ">
+                <i class="fa-solid fa-book"></i>
+                <p class="mx-2">Site Name</p>
+                </div>
+                <div class="item-input w-100 d-flex justify-content-start">
+                    <input oninput="validate2()" placeholder="Bookmark Name" class="input-group mb-3 form-control" id="BookmarkName">
+                </div>
+            </div>
+            <div class="item py-3">
+                <div class="item-con  d-flex justify-content-start ">
+
+                <i class="fa-solid fa-link "></i>
+                <p class="mx-2">Site URL</p>
+                </div>
+                <div class="item-input w-100 d-flex justify-content-start">
+                    <input oninput="validate()" placeholder="Website URL" class="input-group mb-3 form-control " id="WebsiteURL">
+                </div>
+                
+            </div>
+        <button class="btn my-3" onclick="add()">submit</button>
+        </div>
+        <table class="table table-striped text-center mt-3">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableList">
+    
+            </tbody>
+        </table> 
+    
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,24 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler {
+    background-color: tomato;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#myHome {
+
+
+
+    background-color: #09c;
+    /* height: 200px; */
+}
+
+section {
+    height: 100vh;
+    border: 2px solid green;
+}
